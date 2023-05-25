@@ -19,6 +19,12 @@ JOBS = [
     'id':3,
     'title': 'Data Science',
     'location': 'Remote'
+  },
+  {
+    'id':4,
+    'title': 'Backend Python Developer',
+    'location': 'Remote',
+    'salary': 'USD 2.500'
   }
 ]
 
