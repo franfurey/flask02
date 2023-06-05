@@ -14,5 +14,6 @@ engine = create_engine(db_connection_string,
 def load_jobs_from_db():
     with engine.connect() as conn:
         result = conn.execute(text("select * from jobs"))
-        jobs = [dict(row) for row in result]
+        jobs = [{column: value for column, value in row.items()} for row in result]
         return jobs
+
